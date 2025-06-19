@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jermina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .logo {
+    width: 150px; /* O el tamaño que desees */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin: 20px; /* Ejemplo de margen */
+    }
+
+    
+    .hero {
+      background-image: url(Fotos/ChatGPT\ Image\ 18\ jun\ 2025\,\ 10_21_11.jpg); 
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .navbar-custom {
+      background-color: #16a34a;
+    }
+
+    .navbar-custom .nav-link {
+      color: white !important;
+      margin-right: 1rem;
+    }
+
+    .navbar-custom .nav-link.active {
+      color: yellow !important;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 2rem 0;
+    }
+
+    .footer-icons i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">
+      <img src="LOGO.png" alt="Jermina" class="logo">
+
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-white rounded"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#manual">SOBRE NOSOTROS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">SERVICIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="fw-bold display-5">CULTIVA TU <br> FELICIDAD</h1>
+      <p class="lead">Aprende a cuidarte y a tus plantas</p>
+      <a href="#contacto" class="btn btn-success fw-bold mt-3">CONTÁCTANOS</a>
+    </div>
+  </header>
+
+
+  <section id="manual" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold">¿Qué es el Manual Jermina?</h2>
+          <p class="text-muted">¿A quién está dirigido?</p>
+          <p>El Manual Jermina es una guía práctica, accesible y colaborativa pensada para quienes desean iniciarse o profundizar en el mundo de la jardinería en Bolivia. Diseñado tanto para principiantes como para expertos, el manual combina conocimientos tradicionales con recursos actualizados...</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="Fotos/Imagebn.jpg" class="img-fluid rounded" alt="Manual Jermina">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="fw-bold mb-4">Staff</h3>
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-4">
+          <img src="Fotos/1.jpg" class="img-fluid rounded-circle mb-2" alt="">
+          <h6 class="mb-0">Emma Ordoñez</h6>
+          <small class="text-muted">Programadora</small>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="Fotos/2.jpg" class="img-fluid rounded-circle mb-2" alt="">
+          <h6 class="mb-0">Dan Quisbert</h6>
+          <small class="text-muted">Escritor e investigador</small>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="Fotos/3.jpg" class="img-fluid rounded-circle mb-2" alt="">
+          <h6 class="mb-0">Mariela Rojas</h6>
+          <small class="text-muted">Diseñadora</small>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <img src="Fotos/4.jpg" class="img-fluid rounded-circle mb-2" alt="">
+          <h6 class="mb-0">Emiliano Vargas</h6>
+          <small class="text-muted">Director</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <h3 class="fw-bold mb-4">Reseñas</h3>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="p-3 border rounded">
+          <p>“Me gustó mucho el libro, bastante bueno”</p>
+          <p class="mb-0"><strong>Carlos Suares</strong><br><small></small></p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 border rounded">
+          <p>“Me ayudó a tranquilizarme”</p>
+          <p class="mb-0"><strong>Jared Mamani</strong><br><small></small></p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="p-3 border rounded">
+          <p>“Mi salud mental ha mejorado”</p>
+          <p class="mb-0"><strong>Rosario Ross</strong><br><small></small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+      <img src="Fotos/Captura de pantalla 2025-06-18 a la(s) 16.18.21.png" alt="Manual Jermina" class="img-fluid rounded shadow" style="max-height: 500px;">
+    </div>
+
+    <div class="col-md-7">
+      <h2 class="fw-bold">Jermina</h2>
+      <h5 class="text-success mb-3">Manual de jardinería para cultivar bienestar</h5>
+
+      <p class="text-muted">
+        “Jermina” no es solo un manual de jardinería: es una guía para reconectar con la tierra, reducir el estrés y mejorar tu salud mental a través del cuidado consciente de las plantas. Ideal para principiantes y apasionados de la naturaleza.
+      </p>
+
+
+      <div class="mb-3">
+        <span class="text-warning fs-5">★ ★ ★ ★ ★</span>
+        <small class="text-muted ms-2">+120 reseñas</small>
+      </div>
+
+      <a href="#contacto" class="btn btn-success btn-lg fw-bold px-4">Comprar ahora</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contacto" class="container py-5">
+    <h3 class="fw-bold mb-4">Contáctanos para comprar tu libro</h3>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+        <div class="col-12 mb-3">
+          <input type="email" class="form-control" placeholder="Email address">
+        </div>
+        <div class="col-12 mb-3">
+          <textarea class="form-control" rows="4" placeholder="Pon tu mensaje acá"></textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <button type="submit" class="btn btn-dark px-5">Submit</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="text-center">
+    <p class="mb-1 fw-bold">Jermina</p>
+    <div class="footer-icons">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
